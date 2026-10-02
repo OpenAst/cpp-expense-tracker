@@ -1,50 +1,50 @@
-# 🚀 Expense Tracker
+# C++ Expense Tracker
 
-Expense tracker records expenses, total, edit and view all expenses made.
+A simple command-line expense tracker built while learning C++. Add expenses, review them, and see their total.
 
-<!-- Optional: If you have an image or GIF demo, drop it here -->
-![Project Demo or Screenshot](path/to/screenshot.png)
+## Features
 
-## ✨ Features
-- **Key Feature 1:** A short description of what makes this great.
-- **Key Feature 2:** Built with speed and modularity in mind.
-- **Key Feature 3:** Zero external dependencies.
+- Add an expense with a description and amount.
+- View all expenses entered during the current run.
+- See the total of those expenses.
+- Uses only the C++ standard library; no external dependencies.
 
-## 🛠️ Tech Stack
-- **Frontend:** HTML5, CSS3, JavaScript
-- **Backend:** Node.js, Express
-- **Database:** MongoDB
+> Expenses are currently kept in memory, so they are cleared when the program exits. Saving them between runs is planned as a future feature.
 
-## 🚀 Getting Started
+## Requirements
 
-Follow these quick steps to get a local copy up and running.
+- A C++17-compatible compiler, such as `g++`.
+- A terminal.
 
-### Prerequisites
-Make sure you have [Node.js](https://nodejs.org) installed (v18 or higher recommended).
+## Build and run
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/OpenAst/cpp-expense-tracker
-   ```
-2. Navigate into the project directory:
-   ```bash
-   cd project-name
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
+Clone the repository and enter its directory:
 
-### Running the App
-Start the development server:
 ```bash
-npm start
+git clone https://github.com/OpenAst/cpp-expense-tracker.git
+cd cpp-expense-tracker
 ```
-The app will be live at `http://localhost:3000`.
 
-## 📝 License
-Distributed under the MIT License. See `LICENSE` for more information.
+Compile the program:
 
-## 🤝 Contributing
-Contributions are welcome! Please fork the repository and open a pull request.
+```bash
+g++ -std=c++17 -Wall -Wextra -pedantic main.cpp -o expense-tracker
+```
+
+Run it:
+
+```bash
+./expense-tracker
+```
+
+## How to use
+
+Choose an option from the menu:
+
+1. Add an expense by entering a description and amount.
+2. View the expenses entered so far and their total.
+3. Exit the program.
+
+## What I’m learning
+
+This project is a hands-on way to practice C++ structs, vectors, loops, conditionals, and console input and output.
